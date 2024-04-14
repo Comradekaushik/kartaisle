@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+
 import HeaderHome from './components/HeaderHome';
+import Topbar from './components/Topbar';
+import Filterbar from './components/Filterbar';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <><HeaderHome/></>
+  <>
+    <HeaderHome/>
+    <Topbar/>
+    <Filterbar/>
+
+    
+  </>
   
 );
 

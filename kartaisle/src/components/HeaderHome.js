@@ -1,5 +1,8 @@
 import React from 'react';
 import "../styles/header.css";
+import Questionmark from '../resources/question-mark-svgrepo-com.svg';
+// import Notificationbell from '../resources/bell-svgrepo-com.svg';
+import Notificationbell from '../resources/notification-bell-svgrepo-com.svg';
 
 export default function HeaderHome() {
   return (
@@ -8,13 +11,40 @@ export default function HeaderHome() {
         KARTAISLE
       </div>
 
-      <div>
-      
-        {/* <img id="header-help" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Icon-round-Question_mark.svg"/> */}
-        <img id="header-help" src={require("../resources/question-mark-svgrepo-com.svg")}/>
+
+
+
+      <div id="header-help-container">
+        <a href="https://www.kike.org">
+          <div>
+              <img id="header-help" src={Questionmark}/>
+          </div>
+        </a>
       </div>
-      <div>
-        <img src={require("../resources/question-mark-svgrepo-com.svg")}/>
+      
+
+      
+      
+      {/* for svg images always import that first then use it with require */}
+
+
+      
+
+      <div id="header-bell-container">
+      
+        <div>
+          <img id="header-bell" src={Notificationbell}/>
+        </div>
+        
+      </div>
+    
+      
+
+
+    
+      <div id="header-profile">
+        k
+
       </div>
     </div>
   )

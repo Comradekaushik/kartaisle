@@ -3,6 +3,13 @@
     height: 10vh;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /*highest*/
+    
 }
 
 
@@ -11,12 +18,59 @@
     letter-spacing: 6px;
     margin-left: 30px;
     font-size: 18px;
+    width: 85%;
 
 
 }
+
+#header-help-container{
+    /* background-color: blanchedalmond; */
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
 
 #header-help{
     max-height: 20px;
     max-width: 20px;
+    
+}
+#header-bell-container{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+#header-bell{
+    max-height: 20px;
+    max-width: 20px;
+    
+    
+
+}
+#header-profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+    color: #1abc9c;
+    background-color: #dee9e7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: auto;
+    cursor: pointer;
 }
 
+#header-profile:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1abc9c;
+    
+}

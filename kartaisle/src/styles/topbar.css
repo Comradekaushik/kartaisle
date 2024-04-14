@@ -1,0 +1,32 @@
+#second-topbar{
+    width: 90vw;
+    
+    height: 15vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    padding-bottom: 7vh;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(220, 213, 213);
+    margin-bottom: 3vh;
+}
+#collections-heading-topbar{
+    font-size: 1.6em;
+}
+#new-collection-button-container{
+    margin-left: auto;
+    margin-right: 10px;
+}
+#new-collection-button{
+    background-color: #1abc9c;
+    color: rgb(255, 255, 255);
+    border-style: none;
+    height: 32px;
+    width: 138px;
+    cursor: pointer;
+    /* letter-spacing: 1px; */
+    font-weight: 700;
+    
+}
