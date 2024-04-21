@@ -11,19 +11,19 @@ export default function Filterbar() {
 
         <div id="filter-by-status">
             <div>Status</div>
-            <div><img class=" arrowdownsvg"  src = {Arrowdown}></img></div>
+            <div><img className=" arrowdownsvg"  src = {Arrowdown}></img></div>
             
         </div>
         <div id="filter-by-category">
             
             <div>Category Tag</div>
-            <div><img class=" arrowdownsvg"  src = {Arrowdown}></img></div>
+            <div><img className=" arrowdownsvg"  src = {Arrowdown}></img></div>
             
         </div>
         <div id="filter-by-date">
             
             <div>Event Date</div>
-            <div><img class=" arrowdownsvg"  src = {Arrowdown}></img></div>
+            <div><img className=" arrowdownsvg"  src = {Arrowdown}></img></div>
         </div>
 
         <div id="search-icon">

@@ -1,0 +1,19 @@
+.editmodalContainer{
+    position: fixed;
+    width: 100%;
+    overflow: scroll;
+    background-color: red;
+}
+.test1{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* z-index: 4000; */
+    overflow: auto;
+}

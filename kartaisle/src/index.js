@@ -6,8 +6,12 @@ import './index.css';
 import HeaderHome from './components/HeaderHome';
 import Topbar from './components/Topbar';
 import Filterbar from './components/Filterbar';
+import CollectionArray from './components/CollectionArray';
 
 import reportWebVitals from './reportWebVitals';
+
+
+import Array from './test-components/mappedcomponents';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +19,9 @@ root.render(
     <HeaderHome/>
     <Topbar/>
     <Filterbar/>
+    <CollectionArray/>
+
+    {/* <Array/> */}
 
     
   </>
