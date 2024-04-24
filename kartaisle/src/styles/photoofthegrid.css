@@ -1,0 +1,15 @@
+.photosofthegrid{
+    /* height: 100px; */
+    /* width: 20%; */
+    margin-right: 5px;
+    /* max-width: 100%; */
+    max-height: 30vh;
+    margin-top: 10px;
+}
+.container-photo-gridphoto{
+    /* width: 25%; */
+    /* background-color: blue; */
+    display: flex;
+    
+    justify-content: center;
+}

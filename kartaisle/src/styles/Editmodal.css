@@ -16,4 +16,5 @@
     left: 0;
     /* z-index: 4000; */
     overflow: auto;
+    /* cursor:-webkit-zoom-in; */
 }

@@ -1,0 +1,37 @@
+.gallery-super-container{
+    padding-top: 10vh;
+    padding-left: 20vw;
+}
+
+
+.Gallery-entire-right-part{
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+
+}
+
+.photogrid-header{
+    position: fixed;
+    top: 10vh;
+    left:20vw;
+    right: 0;
+    z-index: 5000;
+    height: 14vh;
+    font-size: 23px;
+    background-color: white;
+    padding-left: 2.5vw;
+    display: flex;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(198, 191, 191);
+}
+.photogrid-supercontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
