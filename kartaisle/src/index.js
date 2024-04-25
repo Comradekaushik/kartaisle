@@ -8,6 +8,7 @@ import HeaderHome from './components/HeaderHome';
 import Topbar from './components/Topbar';
 import Filterbar from './components/Filterbar';
 import CollectionArray from './components/CollectionArray';
+import GalleryDataArray from './Data/gallerydata2';
 import Gallery from './components/galleries/Gallery';
 
 import reportWebVitals from './reportWebVitals';
@@ -211,7 +212,9 @@ root.render(
     {/* <Array/> */}
 
     {/* <App/> */}
-    <Gallery {...Galleryprops}/>
+    {/* <Gallery {...Galleryprops}/> */}
+
+    <Gallery {...GalleryDataArray[0]}/>
 
     
   </>
