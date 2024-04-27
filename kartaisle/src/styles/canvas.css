@@ -1,0 +1,106 @@
+.editingCanvas{
+    
+    padding: 0;
+    
+    display: none;
+}
+.xyzabc{
+    overflow: auto;
+    height: 50vw;
+    width: 50vw;
+}
+.displayImage{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.filter-buttons-container{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    /* background-color: firebrick; */
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(210, 204, 204);
+}
+
+.grayscale-button{
+    height: 40px;
+    width: 15%;
+    border-style: none;
+    border-radius: 5px;
+    
+    background-color: rgb(221, 0, 52);
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+
+
+
+}
+.brightness-button{
+    height: 40px;
+    width: 15%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(221, 0, 52);
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.contrast-button{
+    height: 40px;
+    width: 15%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(221, 0, 52);
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.saturate-button{
+    height: 40px;
+    width: 15%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(221, 0, 52);
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+
+}
+.sepia-button{
+    height: 40px;
+    width: 15%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(221, 0, 52);
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.editor-download-button-container{
+    margin-top: 5vh;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-button{
+    height: 40px;
+
+}

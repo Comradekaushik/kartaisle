@@ -15,7 +15,8 @@ import reportWebVitals from './reportWebVitals';
 
 
 import Array from './test-components/mappedcomponents';
-
+import Canvas from './components/editor/canvas';
+import Editor from './components/editor/editor';
 
 
 
@@ -214,7 +215,10 @@ root.render(
     {/* <App/> */}
     {/* <Gallery {...Galleryprops}/> */}
 
-    <Gallery {...GalleryDataArray[0]}/>
+    {/* <Gallery {...GalleryDataArray[0]}/> */}
+
+    {/* <Canvas/> */}
+    <Editor/>
 
     
   </>

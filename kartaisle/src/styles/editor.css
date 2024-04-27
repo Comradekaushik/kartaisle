@@ -1,0 +1,7 @@
+.editor-img-canvas-container{
+    width: 60vw;
+    height: 100vh;
+    overflow: auto;
+    margin-left: 20vw;
+    /* background-color: blue; */
+}
