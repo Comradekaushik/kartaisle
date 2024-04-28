@@ -71,7 +71,7 @@ export default function Canvas(props) {
 
           context.font = "45px Arial"; // Set font size and family
           context.fillStyle = "white"; // Set text color
-          context.fillText("watermark!", 100, 100);
+          // context.fillText("watermark!", 100, 100);
 
           const x = canvas.width; // Right edge of the canvas
           const y = canvas.height; // Bottom edge of the canvas
@@ -101,7 +101,7 @@ export default function Canvas(props) {
             context.filter = "grayscale(100%)";
             photo.style.filter = "grayscale(100%)";
             context.drawImage(image, 0, 0, canvas.width, canvas.height);
-            console.log("mission accomplished");
+            
         };
       }
 
@@ -117,7 +117,7 @@ export default function Canvas(props) {
             context.filter = "brightness(200%)";
             photo.style.filter = "brightness(200%)";
             context.drawImage(image, 0, 0, canvas.width, canvas.height);
-            console.log("mission accomplished");
+            
         };
         
 
@@ -134,7 +134,7 @@ export default function Canvas(props) {
             context.filter = "contrast(200%)";
             photo.style.filter = "contrast(200%)";
             context.drawImage(image, 0, 0, canvas.width, canvas.height);
-            console.log("mission accomplished");
+            
         };
         
 
@@ -152,7 +152,7 @@ export default function Canvas(props) {
             context.filter = "saturate(8)";
             photo.style.filter = "saturate(8)";
             context.drawImage(image, 0, 0, canvas.width, canvas.height);
-            console.log("mission accomplished");
+            
         };
 
       }
@@ -169,7 +169,7 @@ export default function Canvas(props) {
             context.filter = "sepia(100%)";
             photo.style.filter = "sepia(100%)";
             context.drawImage(image, 0, 0, canvas.width, canvas.height);
-            console.log("mission accomplished");
+            
         };
 
       }

@@ -18,10 +18,11 @@ export default function Editor() {
  
     return (
         <>
-            <div className="App">
-                <h2>Add Image:</h2>
-                <input type="file" onChange={handleChange} multiple />
-                {/* <img src={file} /> */}
+            <div className="add-image-input-container">
+                <div><h2 className="add-image-heading">Add Image:</h2></div>
+                
+                <div> <input className="add-image-input" type="file" onChange={handleChange} multiple /> </div>
+                
                 
             </div>
 

@@ -212,13 +212,13 @@ root.render(
 
     {/* <Array/> */}
 
-    {/* <App/> */}
+    <App/>
     {/* <Gallery {...Galleryprops}/> */}
 
     {/* <Gallery {...GalleryDataArray[0]}/> */}
 
-    {/* <Canvas/> */}
-    <Editor/>
+    
+    {/* <Editor/> */}
 
     
   </>

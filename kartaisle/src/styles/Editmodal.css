@@ -4,9 +4,12 @@
     overflow: scroll;
     background-color: red;
 }
-.test1{
+.editmodal-main-container{
     background-color: black;
-    color: white;
+    background-color: transparent;
+    background-color: rgba(42, 41, 41, 0.5) ;
+
+    
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -18,3 +21,204 @@
     overflow: auto;
     /* cursor:-webkit-zoom-in; */
 }
+
+.editmodal-subcontainer{
+    width:60vw;
+    min-height: 100vh;
+    background-color: white;
+    
+    
+    margin-left: 20vw;
+    padding-bottom: 40px;
+    
+}
+
+.editmodal-header{
+    height: 20vh;
+    background-color: black;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    /* text-align: left; */
+    text-transform: uppercase;
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    color: black;
+}
+
+.editmodal-header-title{
+    margin-left: 15px;
+}
+
+.close-editmodal-button-container{
+    margin-left: auto;
+    margin-right: 20px;
+
+}
+.close-editmodal-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.closeicon-svg{
+    height: 20px;
+
+}
+.editmodal-input-field{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.edit-collection-name-label{
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    width: 90%;
+    
+    /* display: block; */
+}
+.edit-collection-name-input-field{
+    width: 54vw;
+    height: 46px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c5c1c1;
+    border-radius: 1px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+
+}
+.edit-collection-name-input-field:focus{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1258b5;
+    border-radius: 1px;
+
+    
+    outline: none;
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    
+}
+
+
+
+
+
+
+
+
+
+.editmodal-input-field{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.edit-collection-category-tag-label{
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    width: 90%;
+    
+    /* display: block; */
+}
+.edit-collection-category-tag-field{
+    width: 54vw;
+    height: 46px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c5c1c1;
+    border-radius: 1px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+
+}
+.edit-collection-category-tag-field:focus{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1258b5;
+    border-radius: 1px;
+
+    
+    outline: none;
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    
+}
+.category-tags-instruction{
+    color: #999;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    line-height: 1.5em;
+    margin-top: 12px;
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+
+
+}
+
+.save-cancel-button-container{
+    display: flex;
+    margin-top: 20px;
+    justify-content: right;
+
+}
+
+.cancel-button-editmodal{
+    /* margin-left: auto; */
+    margin-right: 20px;
+    background-color: transparent;
+    color: #939393;
+    padding: 0 24px;
+    line-height: 40px;
+    max-height: 40px;
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    
+
+}
+
+.save-button-editmodal{
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: #1abc9c;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 24px;
+    line-height: 40px;
+    max-height: 40px;
+    font-family: proxima-nova, Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    white-space: nowrap;
+    border: none;
+    border-radius: 0;
+    transition: background-color .5s ease-out, color .5s ease-out;
+    
+}
+
+

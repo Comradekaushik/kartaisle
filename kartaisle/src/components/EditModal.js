@@ -1,154 +1,102 @@
 import React from 'react';
 import "../styles/Editmodal.css";
+import closeicon from '../resources/cross-svgrepo-com.svg'
 
 export default function EditModal({props}) {
   return (
 
-    <div className = "test1">
-        <div>
-            <button onClick={props}>
-                close me 
-            </button>
+    <>
+   
+
+    <div className = "editmodal-main-container">
+
+
+      <div className ="editmodal-subcontainer">
+
+
+        <div className='editmodal-header'>
+
+
+          <div className='editmodal-header-title'>Edit Collection</div>
+          <div className='close-editmodal-button-container'>
+              <button onClick={props} className='close-editmodal-button'>
+                  <img className="closeicon-svg" src={closeicon}></img>
+              </button>
+          </div>
+
+
+
         </div>
-        Hello Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
+        <div className='editmodal-form'>
+          
+          <div className='editmodal-input-field'>
+            <div className='edit-collection-name-label'>Collection Name</div>
+            <div><input className='edit-collection-name-input-field' type='text'/></div>
+          </div>
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
+          <div className='editmodal-input-field'>
+            <div className='edit-collection-category-tag-label'>Category Tags</div>
+            <div><input className='edit-collection-category-tag-field' type='text'/></div>
+          </div>
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
+          <div className='category-tags-instruction'>What kind of collection is this? Separate your tags with a comma. e.g. wedding, outdoor, summer.</div>
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
+          <div>
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
+            <div className='editmodal-input-field'>
+              <div className='edit-collection-category-tag-label'>collection-url</div>
+              <div>
+                <input className='edit-collection-category-tag-field' type='text'/>
+              </div>
+            </div>
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
+            <div className='category-tags-instruction'>What kind of url you want to give to the  collection like www.kartaisle.com/album/yourURL.</div>
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        \Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
+            <div className='editmodal-input-field'>
+              <div className='edit-collection-category-tag-label'>collection-url</div>
+              <div>
+                <input className='edit-collection-category-tag-field' type='text'/>
+              </div>
+            </div>
+          </div>
+          
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
+          <div className='save-cancel-button-container'>
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
+            <div><button className='cancel-button-editmodal'  onClick={props}>cancel</button></div>
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
+            
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
+            <div><button className='save-button-editmodal'>save</button></div>
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
+          </div>
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
+          
+        </div>
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
+        
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
 
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
+      </div>
+       
 
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
 
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
-
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
-
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
-
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
-
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
-
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
-
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
-
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
-
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
-
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
-
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-        Videos and images from the scene showed a huge explosion, which also set fire to trees in the surrounding areas, spreading the blaze. Footage from inside the base on Saturday morning showed a large crater and damage to infrastructure and vehicles.
-
-        In a statement, the PMF claimed “American aggression bombed the Kalso [Kalsu] military base”, which is located near the town of Iskandariya.
-
-        The Iraqi military said on Saturday that there were no drones or fighter jets detected in the airspace of the Babil area before or during the blast.
-
-        The United States military denied reports that it was behind air strikes in Iraq. By Saturday afternoon, no claim of responsibility for the attack had been made.
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      
     
     </div>
-    // <div className = "editmodalContainer">
-    //     <div>Edit Collection</div>
-    //     <div>
-    //         <label >
-    //             <input type='text'  />
-    //         </label>
-            
-    //         <label>
-    //             <input type='date'/>
-    //         </label>
-            
-    //         <label>
-    //             <select>
-    //                 <option>Published</option>
-    //                 <option>Private</option>
-    //             </select>
-    //         </label>
-            
+    
+    
 
-    //         <div>
-
-    //         </div>
-    //         <div><input type='text'/></div>
-    //     </div>
-    // </div>
+    </>
     
   )
 }
