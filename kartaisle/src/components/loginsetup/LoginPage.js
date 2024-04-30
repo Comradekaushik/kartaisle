@@ -1,8 +1,12 @@
 import React from 'react';
 import LoginData from './LoginData';
 import '../../styles/loginpage.css';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
+
+  const navigate = useNavigate();
 
   const[userAuthenticationArray,setUserAuthenticationArray] = React.useState(LoginData);
 
@@ -47,6 +51,7 @@ export default function LoginPage() {
         for(let i = 0;i< userAuthenticationArray.length;i++){
           if(userAuthenticationArray[i].username === usernameentered && userAuthenticationArray[i].password === passwordentered){
             console.log('useristrue');
+            navigate('/collections');
             break;
           }
 
@@ -82,9 +87,39 @@ export default function LoginPage() {
       }
     }
 
-    const showlogin = 0;
-    const showsignup = 0;
     
+
+    const [showLogin,setShowLogin] = React.useState(1);
+    const [showSignUp,setShowSignUp] = React.useState(0);
+
+    function handleShowLogin(){
+      if(showLogin === 0){
+        setShowLogin(1);
+        setShowSignUp(0);
+
+      }
+      else if(showLogin === 1){
+        setShowLogin(0);
+        setShowSignUp(1);
+
+      }
+
+
+    }
+    
+    function handleShowSignup(){
+      if(showSignUp === 0){
+        setShowSignUp(1);
+        setShowLogin(0);
+
+      }
+      else if(showSignUp === 1){
+        setShowSignUp(0);
+        setShowLogin(1);
+
+      }
+
+    }
   
   return (
     <>
@@ -94,11 +129,11 @@ export default function LoginPage() {
         KARTAISLE
       </div>
 
-      <div className='login-section'>
+      {showLogin === 1 && <div className='login-section'>
               <div className='login-message'>Log in to Kartaisle</div>
 
               <div className='signup-instead'>Don't have an account? 
-              <button className='signup-instead-button'>Sign up</button></div>
+              <button className='signup-instead-button' onClick={handleShowSignup}>Sign up</button></div>
               <div className='username-input-container'>
 
                 <input type = 'text' ref={usernameInputField} className='username-input' placeholder='Username'/>
@@ -123,10 +158,13 @@ export default function LoginPage() {
               <div className='login-button-container'>
                 <button onClick={handleLogin} className='login-button' >Login</button>
               </div>
+
+
+              
               
 
 
-      </div>
+      </div>}
       
       
 
@@ -136,11 +174,11 @@ export default function LoginPage() {
 
 
 
-      <div className='signup-section'>
+      {showSignUp === 1 && <div className='signup-section'>
         <div className='signup-message'>Create your free account</div>
         <div className='login-instead'>
             Already have an account? 
-            <button className='login-instead-button'>Log in</button>
+            <button className='login-instead-button' onClick={handleShowLogin}>Log in</button>
         </div>
         
         <div className='email-input-container-signup'>
@@ -166,7 +204,7 @@ export default function LoginPage() {
         
         
 
-      </div>
+      </div>}
 
 
      

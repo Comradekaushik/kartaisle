@@ -516,7 +516,7 @@ const GalleryDataArray = [
 
     {
         sidebarprops : {
-          galleryName: "Gallery first",
+          galleryName: "Gallery Second",
           galleryCreationDate : "13 Aug 2012",
           galleryStatus : "Published",
           galleryThumbnail : require("../content-images/griffin-wooldridge-aFMsnhkZoJg-unsplash.jpg"),
@@ -689,10 +689,10 @@ const GalleryDataArray = [
 
     {
         sidebarprops : {
-          galleryName: "Gallery first",
-          galleryCreationDate : "13 Aug 2012",
-          galleryStatus : "Published",
-          galleryThumbnail : require("../content-images/griffin-wooldridge-aFMsnhkZoJg-unsplash.jpg"),
+          galleryName: "Gallery Second",
+          galleryCreationDate : "16 Aug 2016",
+          galleryStatus : "Private",
+          galleryThumbnail : require("../content-images/danial-shoorangiz-BCbaILjH_LI-unsplash.jpg"),
         },
         photosarrayprops : {
             array: [
