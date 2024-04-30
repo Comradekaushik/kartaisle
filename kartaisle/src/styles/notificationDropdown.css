@@ -2,8 +2,10 @@
     position : fixed;
     height: 42vh;
     width:15vw;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     top: 11vh;
     right: 70px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    
     /* display: none; */
 }

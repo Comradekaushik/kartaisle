@@ -1,10 +1,74 @@
+
+*{
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 .profile-dropdown-main-container{
     position : fixed;
     height: 60vh;
     width:20vw;
-    background-color: rgb(17, 255, 0);
+    background-color: rgb(255, 255, 255);
     top: 11vh;
     right: 10px;
     z-index: 12000;
+    box-shadow: 0 6px 12px rgba(23, 22, 22, 0.175);
     /* display: none; */
+}
+
+.profile-name-username{
+    width: 100%;
+    display: flex;
+    height: 7vh;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-left: 5px;
+    align-items: center;
+    cursor: pointer;
+
+}
+.profile-name-username-profile-initials{
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile-name-username-username{
+    display: flex;
+    align-items: center;
+
+}
+.link-container-dropdown-editor-option{
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+.editor-menu-option{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
+    color: black;
+
+
+}
+.dropdown-editor-modal-btn{
+    background-color: transparent;
+    border: none;
+
+}
+.editor-icon{
+    height: 20px;
+    width: 20px;
 }

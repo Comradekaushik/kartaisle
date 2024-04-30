@@ -69,8 +69,8 @@ export default function Canvas(props) {
           const canvas = canvasRef.current;
           const context = canvas.getContext('2d');
 
-          context.font = "45px Arial"; // Set font size and family
-          context.fillStyle = "white"; // Set text color
+          context.font = "45px Arial"; 
+          context.fillStyle = "white";
           // context.fillText("watermark!", 100, 100);
 
           const x = canvas.width; // Right edge of the canvas

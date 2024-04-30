@@ -56,7 +56,7 @@ export default function LoginPage() {
           }
 
           else if(i === userAuthenticationArray.length - 1 && userfound === 0){
-            console.log("no user found");
+            alert("no user found,signup please");
           }
         }
 
@@ -84,6 +84,7 @@ export default function LoginPage() {
         console.log(newUser.username,newUser.email,newUser.password);
         setUserAuthenticationArray((previousArray)=>{return([...previousArray,newUser])});
         console.log(userAuthenticationArray);
+        alert("newuser registered,login again")
       }
     }
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/notificationDropdown.css'
+import '../styles/notificationDropdown.css';
 
 export default function NotificationDropdown() {
   return (
-    <div className='notification-dropdown-main-container'>NotificationDropdown</div>
+    <div className='notification-dropdown-main-container'>No Notifications!</div>
   )
 }
