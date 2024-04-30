@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+
+import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './App';
 
@@ -10,10 +15,7 @@ import Filterbar from './components/Filterbar';
 import CollectionArray from './components/CollectionArray';
 import GalleryDataArray from './Data/gallerydata2';
 import Gallery from './components/galleries/Gallery';
-
-import reportWebVitals from './reportWebVitals';
-
-
+import LoginPage from './components/loginsetup/LoginPage';
 import Array from './test-components/mappedcomponents';
 import Canvas from './components/editor/canvas';
 import Editor from './components/editor/editor';
@@ -213,12 +215,38 @@ root.render(
     {/* <Array/> */}
 
     <App/>
+
+
     {/* <Gallery {...Galleryprops}/> */}
 
     {/* <Gallery {...GalleryDataArray[0]}/> */}
 
     
     {/* <Editor/> */}
+
+    {/* <LoginPage/> */}
+
+
+    
+
+
+
+
+    {/* <BrowserRouter>
+        <Routes>
+
+            
+            <Route path="/" element={<LoginPage />}/>
+            
+            <Route path="/collections" element={<App />} />
+            
+            <Route path="/editor" element ={<Editor/>}/>
+            
+        </Routes>
+    
+    
+    </BrowserRouter> */}
+
 
     
   </>

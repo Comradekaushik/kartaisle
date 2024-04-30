@@ -5,6 +5,7 @@
     /* max-width: 100%; */
     max-height: 30vh;
     margin-top: 10px;
+    cursor: pointer;
 }
 .container-photo-gridphoto{
     /* width: 25%; */
@@ -12,4 +13,49 @@
     display: flex;
     
     justify-content: center;
+}
+.gridphoto-viewindetail{
+    position: fixed;
+    background-color: rgb(10, 10, 10);
+    /* background-color: #ffffff; */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+    
+}
+.viewindetail-photosofthegrid{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.close-viewindetail-container{
+    position: fixed;
+    z-index: 6000;
+    top: 20px;
+    right: 20px;
+}
+.close-viwindetail-button{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+
+
+}
+.close-viwindetail-icon{
+    height: 20px;
+    width: 20px;
+
 }

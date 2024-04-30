@@ -1,7 +1,8 @@
 import React from 'react';
 import PhotogridData from '../../Data/gallerydata';
 import GridPhoto from './GridPhoto';
-import '../../styles/Gallery.css'
+import '../../styles/Gallery.css';
+
 
 export default function Photogrid(props) {
   // const GridPhotoArray  = PhotogridData.map((data)=>{return <GridPhoto {...data}/>});

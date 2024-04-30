@@ -15,7 +15,7 @@
     top: 10vh;
     left:20vw;
     right: 0;
-    z-index: 5000;
+    /* z-index: -1000; */
     height: 14vh;
     font-size: 23px;
     background-color: white;
@@ -31,7 +31,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    z-index: 2000;
+    z-index: 0;
     padding-top: 80px;
     padding-bottom: 20px;
     

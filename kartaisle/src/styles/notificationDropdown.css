@@ -1,0 +1,9 @@
+.notification-dropdown-main-container{
+    position : fixed;
+    height: 42vh;
+    width:15vw;
+    background-color: black;
+    top: 11vh;
+    right: 70px;
+    /* display: none; */
+}

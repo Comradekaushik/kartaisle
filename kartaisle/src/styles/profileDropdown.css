@@ -1,0 +1,10 @@
+.profile-dropdown-main-container{
+    position : fixed;
+    height: 60vh;
+    width:20vw;
+    background-color: rgb(17, 255, 0);
+    top: 11vh;
+    right: 10px;
+    z-index: 12000;
+    /* display: none; */
+}
