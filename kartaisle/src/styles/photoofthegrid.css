@@ -41,7 +41,7 @@
     top: 20px;
     right: 20px;
 }
-.close-viwindetail-button{
+.close-viewindetail-button{
     height: 30px;
     width: 30px;
     display: flex;
@@ -54,8 +54,29 @@
 
 
 }
-.close-viwindetail-icon{
+.close-viewindetail-icon{
     height: 20px;
     width: 20px;
 
+}
+.likebar{
+    color: #ffffff;
+    /* stroke="#292D32" */
+    position: fixed;
+    left: 5vw;
+    top: 40vh;
+    /* background-color: blue; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #474747;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.save-icon{
+    width: 25px;
+    height: 25px;
+    
 }

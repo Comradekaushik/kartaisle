@@ -102,3 +102,24 @@
     cursor: pointer;
 
 }
+
+.favorites-btn-container{
+    width: 100%;
+    /* background-color: black; */
+    margin-top: 5px;
+
+}
+
+.gallery-favorites-btn{
+    font-size: 16px;
+    font-weight: 400;
+    
+    white-space: nowrap;
+    height: 30px;
+    width: 100%;
+    background-color: #df0543;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}

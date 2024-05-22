@@ -75,7 +75,7 @@ const PhotogridData = [
     },
     {
         image : require("../content-images/andrew-ly-iUA1cea8QiY-unsplash.jpg"),
-        description : "Wolfie",
+        description : "Tombstone",
         
 
 

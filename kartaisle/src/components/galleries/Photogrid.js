@@ -7,23 +7,57 @@ import '../../styles/Gallery.css';
 export default function Photogrid(props) {
   // const GridPhotoArray  = PhotogridData.map((data)=>{return <GridPhoto {...data}/>});
 
+  // const [likedimgarr,setlikedimgarr] = React.useState(props.likedarray);
+  // const GridPhotoArray  = props.array.map((data)=>{return <GridPhoto {...data} setLikedImgArr={setlikedimgarr} Likedimgarr={likedimgarr}/>});
 
-  const GridPhotoArray  = props.array.map((data)=>{return <GridPhoto {...data}/>})
+
+  const GridPhotoArray  = props.array.map((data)=>{return <GridPhoto {...data} setLikedImgArr={props.setLikedImgArr} Likedimgarr={props.Likedimgarr}/>});
+  
+  console.log(props.Likedimgarr);
+
+
+  const uniqueLikedimgarr = [...new Set(props.Likedimgarr)];
+  
 
 
 
-  return (
-    <div className='Gallery-entire-right-part'>
+  // const LikedPhotoArray  = props.Likedimgarr.map((data)=>{return <GridPhoto {...data} setLikedImgArr={props.setLikedImgArr} Likedimgarr={props.Likedimgarr}/>});
 
-        <div className='photogrid-header'>Photos</div>
+  const LikedPhotoArray  = uniqueLikedimgarr.map((data)=>{return <GridPhoto {...data} setLikedImgArr={props.setLikedImgArr} Likedimgarr={props.Likedimgarr}/>});
+
+
+  if (props.showfavoritescurrentvalue === 1){
+    return (
+      <div className='Gallery-entire-right-part'>
+
+          <div className='photogrid-header'>Favorites Photos</div>
         
-        <div className='photogrid-supercontainer'>
+          <div className='photogrid-supercontainer'>
 
-          {GridPhotoArray}
-        </div>
+            {LikedPhotoArray}
+          </div>
         
 
-    </div>
+      </div>
+
+    )
+  }
+
+
+  else{
+    return (
+      <div className='Gallery-entire-right-part'>
+
+          <div className='photogrid-header'>Photos</div>
+          
+          <div className='photogrid-supercontainer'>
+
+            {GridPhotoArray}
+          </div>
+          
+
+      </div>
     
-  )
+    )
+  }
 }

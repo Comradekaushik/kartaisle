@@ -198,13 +198,50 @@ const galleryobject = {
 
 
 export default function Gallery(props) {
-  return (
-    <div className='gallery-super-container'>
+
+  const [showSavedPics,setShowSavedPics] = React.useState(0);
+  // return (
+    
+  //   <div className='gallery-super-container'>
+  //       <HeaderHome/>
+        
+  //       <SidebarGallery {...props.sidebarprops} showfavorites={setShowSavedPics} showfavoritescurrentvalue={showSavedPics}/>
+  //       <Photogrid {...props.photosarrayprops}/>
+    
+  //   </div>
+  // )
+
+
+  const [likedimgarr,setlikedimgarr] = React.useState(props.photosarrayprops.likedarray);
+
+  
+  
+
+  if(showSavedPics === 0){
+    return(
+        <div className='gallery-super-container'>
+          <HeaderHome/>
+          
+          <SidebarGallery {...props.sidebarprops} showfavorites={setShowSavedPics} showfavoritescurrentvalue={showSavedPics}/>
+          <Photogrid {...props.photosarrayprops} setLikedImgArr = {setlikedimgarr} Likedimgarr = {likedimgarr} showfavoritescurrentvalue = {showSavedPics} />
+
+          
+    
+        </div>
+
+    )
+  }
+  else if(showSavedPics === 1){
+    return(
+      <div className='gallery-super-container'>
         <HeaderHome/>
         
-        <SidebarGallery {...props.sidebarprops}/>
-        <Photogrid {...props.photosarrayprops}/>
-    
-    </div>
-  )
+        <SidebarGallery {...props.sidebarprops} showfavorites={setShowSavedPics} showfavoritescurrentvalue={showSavedPics}/>
+        <Photogrid {...props.photosarrayprops} setLikedImgArr = {setlikedimgarr} Likedimgarr = {likedimgarr} showfavoritescurrentvalue = {showSavedPics}  />
+  
+      </div>
+
+    )
+
+  }
 }
